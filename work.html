@@ -85,6 +85,12 @@ https://templatemo.com/tm-561-purple-buzz
   .card-body {
     min-height: 200px;
 } 
+.header-bg > img{
+  display:none 
+}
+}
+.header-bg::before {
+    z-index: 1;
 }
 </style>
 </head>
@@ -135,11 +141,39 @@ https://templatemo.com/tm-561-purple-buzz
       <main id="main"> 
     
         <!-- ======= Blog Header ======= -->
-        <div class="header-bg page-area">
-          <div class="container position-relative">
+        <div class="header-bg page-area" style="
+    background-image: url(page-header.png);
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+">
+          
+<img src="greytank.png" style="
+    width: 400px;
+    position: absolute;
+    right: 270px;
+    margin-top: -30px;
+    opacity: .7;
+">
+<img src="greytank.png" style="
+    width: 400px;
+    position: absolute;
+    margin-top: -30px;
+    right: -120px;
+    opacity: .7;
+"><img src="greytank.png" style="
+    width: 400px;
+    position: absolute;
+    right: 70px 
+">  
+           <div class="container position-relative">
             <div class="row">
-              <div class="col-md-12 col-sm-12 col-xs-12">
-                <div class="slider-content text-center">
+              <div class="col-md-12 col-sm-12 col-xs-12" style="
+    z-index: 99;
+">
+                <div class="slider-content text-center" style="
+    margin-top: 60px;
+">
                   <div class="header-bottom">
                     <div class="layer2">
                       <h1 class="title2">Refrigerent</h1>       
@@ -152,7 +186,7 @@ https://templatemo.com/tm-561-purple-buzz
               </div>
             </div>
           </div>
-        </div><!-- End Blog Header -->  
+        </div>
 
     <!-- Start Our Work -->
     <section class="container py-5">
@@ -254,11 +288,11 @@ https://templatemo.com/tm-561-purple-buzz
                 <div class="service-work overflow-hidden card mx-5 mx-sm-0 mb-5">
                     <div style="position: relative; 
                     overflow: hidden; 
-                    height: 400px;">
+                    height: 400px;"> 
                     <img class="r410" style="    max-width: 510px;
                     width: 510px; 
                     margin-left: -50px;
-                    margin-top: 40px;" class="card-img-top" src="pinktanknoshadow.png" alt="..."> 
+                    margin-top: 40px;transform: rotate(.5deg)" class="card-img-top" src="pinktanknoshadow.png" alt="..."> 
                     </div>
                     <div class="card-body">
                         <h5 class="card-title light-300 text-dark">R-410A</h5>
@@ -433,17 +467,17 @@ https://templatemo.com/tm-561-purple-buzz
           </div>
         </div>
       </footer><!-- End  Footer -->
+         <!-- Load jQuery require for isotope -->
+    <script src="jss/jquery.min.js"></script> 
+    <!-- Isotope -->
+    <script src="jss/isotope.pkgd.js"></script>
     <!-- Bootstrap -->
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="jss/bootstrap.bundle.min.js"></script>
     <!-- Lightbox -->
-    <script src="assets/js/fslightbox.js"></script>
+    <script src="jss/fslightbox.js"></script>  
     <script>
         fsLightboxInstances['gallery'].props.loadOnlyCurrentSource = true;
     </script>
-    <!-- Load jQuery require for isotope -->
-    <script src="assets/js/jquery.min.js"></script>
-    <!-- Isotope -->
-    <script src="assets/js/isotope.pkgd.js"></script>
     <!-- Page Script -->
     <script>
         $(window).load(function() {
@@ -465,8 +499,10 @@ https://templatemo.com/tm-561-purple-buzz
             });
         });
     </script>
+ 
+    <!-- Page Script -->  
     <!-- Templatemo -->
-    <script src="assets/js/templatemo.js"></script>
+    <script src="js2/templatemo2.js"></script>
     <!-- Custom -->
     <script src="jss/custom.js"></script>  
     <script src="js/core.min.js"></script>
