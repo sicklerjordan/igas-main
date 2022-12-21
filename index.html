@@ -42,6 +42,51 @@
     .footer-contacts > p > a{
   color: black !important 
 }   
+.gap{
+  gap: 50px
+}
+@media(max-width:900px){
+  .gap{
+    gap:20px 
+  }
+  .single-blog-img{
+    height: 160px; 
+  }
+  .single-blog-img > a > img{
+    height: 180px !important;   
+  }
+  .comp{
+    width: 400px !important;
+    margin-left: -90px !important; 
+    margin-top: 0px !important;    
+  }
+}
+@media(max-width:600px){
+  .contact-title {
+    width: 90% !important;
+} 
+.single-well{
+  height: 200px !important; 
+}
+.single-blog-img{
+    height: 190px !important;  
+  }
+  .single-blog-img > a > img{
+    width: 100% !important;   
+  }
+  .testimonials .testimonial-item h3 { 
+    line-height: 35px;
+  }
+.comp {
+    margin-left: 0px !important;
+} 
+.footer-contacts{
+  width: 200px; 
+}
+.last-foot{
+  width:300px !important    
+}
+}
   </style>
 </head>
 
@@ -391,7 +436,7 @@
                 position: absolute;
                 opacity: .1;
                 background: black;"></div> 
-                <img style="    height: 300px;
+                <img class="comp" style="    height: 300px;
                 width: 900px;
                 max-width: 900px;
                 margin-left: -250px;
@@ -475,8 +520,8 @@
               </div>
             </div>
           </div> 
-          
-             <p style="width: 600px; text-align: center;margin:auto">We understand your time is valuable, so we make ordering convenient. Please feel free to contact us by any of the options below or submit your inquiry online, and one of our friendly associates will be happy to assist.</p>
+           
+             <p class="contact-title" style="width: 600px; text-align: center;margin:auto">We understand your time is valuable, so we make ordering convenient. Please feel free to contact us by any of the options below or submit your inquiry online, and one of our friendly associates will be happy to assist.</p>
                
             <!-- End Right Blog-->
           </div>
@@ -506,7 +551,7 @@
   <footer>
     <div class="footer-area">
       <div class="container">
-        <div class="row" style="gap:50px">  
+        <div class="row gap">  
           <div class="col-md-4">
             <div class="footer-content">
               <div class="footer-head">
@@ -550,7 +595,7 @@
             </div>
           </div>
           <!-- end single footer -->
-          <div class="col-md-4" style="width: 20% !important">  
+          <div class="col-md-4 last-foot" style="width: 20% !important">   
             <div class="footer-content">
               <div class="footer-head">
                 <h4>Links</h4> 
