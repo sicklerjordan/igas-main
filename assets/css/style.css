@@ -133,7 +133,7 @@ body {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #3ec1d5;
+  background: hsl(214, 96%, 55%); 
   width: 40px;
   height: 40px;
   transition: all 0.4s;
@@ -295,8 +295,15 @@ div#preloader {
 }
 
 .header-bg {
-  background: url('../img/background/page-header.jpg');
+  background: url('../img/background/page-header.jpg'); 
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  padding: 120px 0 60px;
+}
+.header-bgg {
+  background: url('/ware.jpg');      
+  background-repeat: no-repeat; 
   background-size: cover;
   background-position: top center;
   padding: 120px 0 60px;
@@ -689,7 +696,7 @@ div#preloader {
   transition: 0.5s;
   margin: 10px;
   color: #fff;
-  background: #3ec1d5;
+  background: hsl(214, 96%, 55%); 
 }
 
 #hero .btn-get-started:hover {

@@ -10,12 +10,13 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest"> 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900" rel="stylesheet">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -25,6 +26,15 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet"> 
+ 
 
   <!-- =======================================================
   * Template Name: eBusiness - v4.9.1
@@ -42,7 +52,7 @@
   color: black !important 
 }   
 .gap{
-  gap: 50px
+  gap: 150px 
 }
 @media(max-width:900px){
   .gap{
@@ -98,43 +108,98 @@
     transition: 1.5s;  
     transform: rotate(30deg);      
 } 
-.square:hover{ 
-font-size: 1100px;
-width: 100%;
-height: 100%;
+#header {  
+    background: #f7f7f7 !important;  
 }
-.claim-img:hover + .square{   
- font-size: 1100px;   
-width: 100%;
-height: 100%;   
+.navbar a, .navbar a:focus {
+    color: black !important; 
+} 
+#header.header-scrolled { 
 }
-.overflows:hover + .square{    
- font-size: 1100px;   
-width: 100%;
-height: 100%;   
+@media (min-width: 768px){
+.col-md-4 {
+    flex: 0 0 auto;
+    width: 25% !important;   
 }
-
+}
+.nav-btn{
+  border:none; 
+  background-color: hsl(214, 96%, 55%);
+  color: white;
+  padding: 10px 50px;   
+  border-radius: 5px;
+  margin-left: 40px;  
+}
+.banner{
+  background: whitesmoke;  
+  height: 35px;   
+  width: 100%;  
+  position: fixed;
+    z-index: 999;   
+}
+#header{
+  margin-top: 35px;
+  height: 70px; 
+  background-color: hsl(0, 0%, 100%) !important;  
+  box-shadow: 0 0.9px 1.5px rgb(0 0 0 / 3%), 0 3.1px 5.5px rgb(0 0 0 / 8%), 0 14px 25px rgb(0 0 0 / 12%);
+} 
+@media(max-width: 560px) {
+.para-title{
+  margin-left: 0px !important;  
+  font-size: 25px !important; 
+}
+.bottom-para{
+  flex-direction: column; 
+  margin-left: 0px !important;
+}
+i.fa.fa-recycle {
+    display: none;
+}  
+.bottom-card{
+  height: auto !important; 
+}
+.bottom-card{
+  width: auto !important;
+  text-align: center; 
+}
+.last-foot{
+  text-align: left !important;   
+}
+.comp{
+  height: 500px !important;
+    width: 800px !important; 
+    margin-left: -200px;
+}
+} 
   </style>
 </head>
 
-<body>
+<body style="background: #f7f7f7 !important;">  
 
   <!-- ======= Header ======= -->
+  <div class="banner">
+    <div style="display:flex;position:absolute;right:0;font-weight:bold;margin-right: 90px;margin-top: 5px;"> 
+      <div style="margin-right:10px"><a href="about.html" style="color: #444">About Us</a></div>      
+      <div>EN(USA)</div> 
+    </div>
+  </div>  
   <header id="header" class="fixed-top d-flex align-items-center">
-    <div class="container d-flex justify-content-between">
+     
+    <div class="container d-flex justify-content-between"> 
 
-      <div class="logo">
-        <h1><a href="index.html"><span>iGAS</span>USA</a></h1>  
+      <div class="logo" style="margin-top:10px">  
+        <h1><a href="index.html" style="color:black;font-weight: 500;font-size: 25px; 
+          ">iGAS<span style="color:hsl(214, 96%, 55%)">USA</span></h1>       
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
 
       <nav id="navbar" class="navbar">  
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="about.html">About</a></li>
+        <ul
+          
           <li><a class="nav-link scrollto" href="work.html">Refrigerent</a></li> 
-          <li><a class="nav-link scrollto" href="iclaim.html">Reclamation</a></li>   
+          <li><a class="nav-link scrollto" href="iclaim.html">Reclamation</a></li>  
+          <li><a class="nav-link scrollto" href="oem.html">OEM</a></li> 
           <!--<li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="#">Drop Down 1</a></li>
@@ -152,9 +217,10 @@ height: 100%;
               <li><a href="#">Drop Down 4</a></li>
             </ul>
           </li>-->
-          <li><a class="nav-link scrollto" href="contacts.html">Contact</a></li> 
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
+          <li><a class="nav-link scrollto" href="components.html">HVAC Components</a></li> 
+          <li><a href="contacts.html"><button class="nav-btn">Contact Us</button></a></li>     
+        </ul> 
+        <i class="bi bi-list mobile-nav-toggle"></i>  
       </nav><!-- .navbar -->
 
     </div>
@@ -169,37 +235,31 @@ height: 100%;
 
         <div class="carousel-inner" role="listbox">
 
-          <div class="carousel-item active" style="background-image: url(assets/img/hero-carousel/1.jpg)">
+          <div class="carousel-item active" style="background-image: url(IMG_1680.jpg)">
             <div class="carousel-container"> 
               <div class="container"> 
                 <h2 class="animate__animated animate__fadeInDown"> iGas Usa - We Cool The World </h2>
-                <p class="animate__animated animate__fadeInUp">is a leading supplier of refrigerants, as well as
-                  
-                  laying a path for sustainable refrigerent products and services for the HVAC industry.</p>
+                <p class="animate__animated animate__fadeInUp"> 2 million square foot, state-of-the-art production facility can manufacture 40,000 metric tons of R-32 annually</p>
                 <a href="#about" class="btn-get-started scrollto animate__animated animate__fadeInUp">Learn More</a>  
               </div>
             </div>
           </div>
 
-          <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/3.jpg)"> 
+          <div class="carousel-item" style="background-image: url(IMG_1682.jpg)"> 
             <div class="carousel-container">  
               <div class="container">
                 <h2 class="animate__animated animate__fadeInDown">iClaim – Reclaim Our Future</h2>
-                <p class="animate__animated animate__fadeInUp">Recovering, reclaiming, and repurposing
-            
-                  HFC, HCFC, and CFC gases to minimize waste</p> 
+                <p class="animate__animated animate__fadeInUp">Disposable refrigerant production facility is complete with fully automated production lines and the most advanced technology in the field</p> 
                 <a href="iclaim.html" class="btn-get-started scrollto animate__animated animate__fadeInUp">Learn More</a>
               </div>
             </div>
           </div>
 
-          <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/1.jpg)">
+          <div class="carousel-item" style="background-image: url(IMG_1685.jpg)">  
             <div class="carousel-container">
               <div class="container">
                 <h2 class="animate__animated animate__fadeInDown">Refrigerant</h2>
-                <p class="animate__animated animate__fadeInUp">iGas offers virgin and reclaimed Refrigerants
-                  that are domestically blended and tested to
-                  meet AHRI-700 purity standards for any industry.</p>  
+                <p class="animate__animated animate__fadeInUp">Promotes the production, efficiency, and quality of refrigerant gas that has set the market standard </p>  
                 <a href="#about" class="btn-get-started scrollto animate__animated animate__fadeInUp">Learn More</a>
               </div>
             </div>
@@ -221,8 +281,8 @@ height: 100%;
 
   <main id="main">
 
-    <!-- ======= About Section ======= -->
-    <div id="about" class="about-area area-padding">
+    
+   <!-- <div id="about" class="about-area area-padding">
       <div class="container">
         <div class="row">
           <div class="col-md-12 col-sm-12 col-xs-12">
@@ -232,7 +292,6 @@ height: 100%;
           </div>
         </div>
         <div class="row">
-          <!-- single-well start-->
           <div class="col-md-6 col-sm-6 col-xs-12">
             <div class="well-left">
               <div class="single-well" style="    position: relative;
@@ -244,7 +303,6 @@ height: 100%;
               </div>
             </div>
           </div>
-          <!-- single-well end-->
           <div class="col-md-6 col-sm-6 col-xs-12">
             <div class="well-middle">
               <div class="single-well">
@@ -265,18 +323,17 @@ height: 100%;
                     <i class="bi bi-check"></i> HVAC Components
                   </li>
                   <li>
-                    <i class="bi bi-check"></i> Original Equipment Manufacturing
+                    <i class="bi bi-check"></i> Original Equipment Manufacturing 
                   </li> 
                 </ul>
               </div>
             </div>
           </div>
-          <!-- End col-->
         </div>
       </div>
-    </div><!-- End About Section -->
+    </div> 
 
-    <!-- ======= Services Section ======= -->
+   -->
     <!--<div id="services" class="services-area area-padding">
       <div class="container">
         <div class="row">
@@ -388,7 +445,7 @@ height: 100%;
       <div class="row">
         <div class="col-md-12 col-sm-12 col-xs-12">
           <div class="section-headline text-center"> 
-            <h2>What We Do</h2>
+            <h2>Products & Services</h2> 
           </div>
         </div>
       </div>
@@ -398,14 +455,13 @@ height: 100%;
           <div class="single-blog">
             <div class="single-blog-img">
               <a href="iclaim.html">  
-                <img class="claim-img" src="lotsoftanks.jpg" alt="" style="height:280px">
+                <img class="claim-img" src="sean.jpg" alt="" style="height:280px">
                 <div class="square">&#x2B22;</div> 
               </a>
             </div>
             <div class="blog-meta">
-              <span class="comments-type">
+              <span class="comments-type"> 
                 <i class="fa fa-comment-o"></i>
-                <a href="#">iClaim</a> 
               </span>
             
             </div>
@@ -429,14 +485,13 @@ height: 100%;
           <div class="single-blog">
             <div class="single-blog-img">
               <a href="work.html">
-                <img class="claim-img" src="dustintruck.jpg" alt=""> 
-                <div class="square">&#x2B22;</div>  
-              </a>
+                <img class="claim-img" src="dustintruck.jpg" alt="" style="    height: 300px;"> 
+                <div class="square">&#x2B22;</div>   
+              </a> 
             </div>
             <div class="blog-meta">
               <span class="comments-type">
                 <i class="fa fa-comment-o"></i>
-                <a href="#">iGas</a>
               </span>
               
             </div>
@@ -454,6 +509,34 @@ height: 100%;
           </div>
           <!-- Start single blog -->
         </div>
+        <div class="col-md-4 col-sm-4 col-xs-12">
+          <div class="single-blog">
+            <div class="single-blog-img">
+              <a href="work.html">
+                <img class="claim-img" src="tanks.jpg" alt="">  
+                <div class="square">&#x2B22;</div>   
+              </a>
+            </div>
+            <div class="blog-meta">
+              <span class="comments-type">
+                <i class="fa fa-comment-o"></i> 
+              </span>
+              
+            </div>
+            <div class="blog-text">
+              <h4>
+                <a href="work.html">Original Equipment Manaufacturing</a> 
+              </h4> 
+              <p>
+                iGas’ virgin refrigerants are domestically blended and tested to meet AHRI-700 purity standards for any industry.
+              </p>
+            </div>
+            <span>
+              <a href="work.html" class="ready-btn">Read more</a>
+            </span>
+          </div>
+          <!-- Start single blog -->
+        </div>  
         <!-- End Left Blog-->
         <!-- Start Right Blog-->
         <div class="col-md-4 col-sm-4 col-xs-12">
@@ -466,10 +549,10 @@ height: 100%;
                 opacity: .1;
                 background: black;"></div> 
                 <div class="square">&#x2B22;</div> 
-                <img class="claim-img" class="comp" style="    height: 300px;
-                width: 900px;
+                <img class="claim-img comp" class="comp" style="    height: 300px;
+                width: 600px;
                 max-width: 900px;
-                margin-left: -250px;
+                margin-left: -150px;  
                 margin-top: -20px;" src="comp.png" alt="">  
               </a>
             </div> 
@@ -501,7 +584,11 @@ height: 100%;
     
 
     <!-- ======= Testimonials Section ======= -->
-    <div id="testimonials" class="testimonials" style="background: url(shorter-truck-2.jpg) no-repeat;"> 
+    <div id="testimonials" class="testimonials" style="background: url(shorter-truck-2.jpg) no-repeat;min-height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;">  
       <div class="container">
 
         <div class="testimonials-slider swiper">
@@ -514,7 +601,7 @@ height: 100%;
                   
                   Recovering, reclaiming, and repurposing HFC, HCFC, and CFC gases to minimize waste, minimize virgin production, as well as separate mixed gases and remove contaminants to maximize the lifecycle of refrigerants. 
                  
-                </p>
+                </p> 
               </div>
             </div><!-- End testimonial item -->
             <div class="swiper-slide">
@@ -539,39 +626,117 @@ height: 100%;
     </div><!-- End Testimonials Section -->
 
     <!-- ======= Blog Section ======= -->
-    <div id="blog" class="blog-area">
-      <div class="blog-inner area-padding">
-        <div class="blog-overly"></div>
-        <div class="container ">
-          <div class="row">
-            <div class="col-md-12 col-sm-12 col-xs-12">
-              <div class="section-headline text-center"> 
-                <h2>Contact Us</h2>
-              </div>
-            </div>
-          </div> 
-           
-             <p class="contact-title" style="width: 600px; text-align: center;margin:auto">We understand your time is valuable, so we make ordering convenient. Please feel free to contact us by any of the options below or submit your inquiry online, and one of our friendly associates will be happy to assist.</p>
-               
-            <!-- End Right Blog-->
-          </div>
-        </div> 
-      </div>
-    </div><!-- End Blog Section -->
-
-    <!-- ======= Suscribe Section ======= -->
-    <div class="suscribe-area"> 
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 col-md-12 col-sm-12 col-xs=12">
-            <div class="suscribe-text text-center">
-              <h3>Welcome to iGas Usa</h3>
-              <a class="sus-btn" href="contacts.html">Contact Us</a>  
-            </div>
-          </div>
+    <div class="bottom-para" style="display: flex;justify-content: center;align-items: center;margin-top: 80px;gap: 20px;margin-left: 50px;">  
+      
+      <div class="bottom-card" style="
+            width: 400px;
+            height: 250px; 
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            padding: 50px;
+            width: 650px;
+            padding-bottom: 0px;
+        "><i class="fa fa-recycle" style="
+        color: black; 
+        font-size: 40px;
+        margin-right: 490px;
+        margin-bottom: 15px;
+      "></i>
+      <h3 class="para-title" style="font-size: 35px;margin-left: -100px;">Recovery Cylinder Program</h3>
+            <p style="
+          font-size: 16px;
+      ">As supplies of virgin HFC refrigerant are reduced, the availability of reclaimed refrigerant to service existing equipment in future years is vital.
+               iGas is recovering, reclaiming, and repurposing HFC, HCFC, and CFC gases to minimize waste, minimize virgin production, as well as separate mixed
+                gases and remove contaminants to maximize the lifecycle of refrigerants.</p>
+                
+        </div><div class="bottom-card" style=" 
+            width: 400px;
+            height: 250px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            padding: 50px;
+            width: 650px;
+            padding-bottom: 0px;
+        "><i class="fa fa-recycle" style="
+        color: black;
+        font-size: 40px;
+        margin-right: 490px;
+        margin-bottom: 15px;
+      "></i>
+      <h3 class="para-title" style="
+          font-size: 35px;
+          margin-left: -160px;
+      ">Reclaimed Refrigerant</h3>
+            <p style="
+          line-height: 1.5rem;
+          font-size: 16px;
+      ">As supplies of virgin HFC refrigerant are reduced, the availability of reclaimed refrigerant to service existing equipment in future years is vital.
+               iGas is recovering, reclaiming, and repurposing HFC, HCFC, and CFC gases to minimize waste, minimize virgin production, as well as separate mixed
+                gases and remove contaminants to maximize the lifecycle of refrigerants.</p>
+                
         </div>
-      </div>
-    </div><!-- End Suscribe Section -->
+              
+          </div>  
+          <div class="bottom-para" style="display: flex;justify-content: center;align-items: center;margin-top: 80px;gap: 20px;flex-wrap: wrap;margin-left: 50px;">  
+      
+            <div class="bottom-card" style=" 
+                  width: 400px;
+                  height: 300px;
+                  display: flex;
+                  align-items: center;
+                  flex-direction: column;
+                  padding: 50px;
+                  width: 650px;
+                  padding-top: 0px;
+              "><i class="fa fa-recycle" style="
+              color: black;
+              font-size: 40px;
+              margin-right: 490px;
+              margin-bottom: 15px;
+            "></i>
+            <h3 class="para-title" style="font-size: 35px;margin-left: -100px;">Reclaim Interface Program</h3>
+                  <p style="
+                font-size: 16px;
+            ">As supplies of virgin HFC refrigerant are reduced, the availability of reclaimed refrigerant to service existing equipment in future years is vital.
+                     iGas is recovering, reclaiming, and repurposing HFC, HCFC, and CFC gases to minimize waste, minimize virgin production, as well as separate mixed
+                      gases and remove contaminants to maximize the lifecycle of refrigerants.</p>
+                      
+              </div><div class="bottom-card" style="
+                  width: 400px;
+                  height: 300px;
+                  display: flex;
+                  align-items: center;
+                  flex-direction: column;
+                  padding: 50px;
+                  width: 650px;
+                  padding-top: 0px;
+              "><i class="fa fa-recycle" style="
+              color: black;
+              font-size: 40px;
+              margin-right: 490px;
+              margin-bottom: 15px;
+            "></i>
+            <h3 class="para-title" style="
+                font-size: 35px;
+                margin-left: -120px;
+            ">Recovery Cylinder Testing</h3>
+                  <p style="
+                font-size: 16px;
+            ">As supplies of virgin HFC refrigerant are reduced, the availability of reclaimed refrigerant to service existing equipment in future years is vital.
+                     iGas is recovering, reclaiming, and repurposing HFC, HCFC, and CFC gases to minimize waste, minimize virgin production, as well as separate mixed
+                      gases and remove contaminants to maximize the lifecycle of refrigerants.</p>
+                      
+              </div>
+              <button class="nav-btn" style="
+                margin-bottom: 80px;
+                margin-top: -50px;
+                margin-left: -10px;
+            ">Learn More</button> 
+                    
+                </div>  
+  
 
     <!-- ======= Contact Section ======= -->
    
@@ -581,12 +746,13 @@ height: 100%;
   <footer>
     <div class="footer-area">
       <div class="container">
-        <div class="row gap">  
+        <div class="row gap" style="justify-content: center;
+        align-items: center;">   
           <div class="col-md-4">
             <div class="footer-content">
               <div class="footer-head">
                 <div class="footer-logo">
-                  <h2><span>iGAS</span>USA</h2>           
+                 <img style="width:100px" src="igaslogo.png" />            
                 </div>
 
                 <p>Our mission is to develop innovative solutions that will have a positive effect on our company's work, business and the environment.</p> 
@@ -615,11 +781,11 @@ height: 100%;
               <div class="footer-head">
                 <h4>information</h4> 
                 <p>
-                  Our mission is to develop innovative solutions that will have a positive effect on our company's work, business and the environment.
+                  Our mission is to develop innovative solutions that will have a positive effect on our company’s work, business and the environment.
                 </p>
                 <div class="footer-contacts">
-                  <p><span>Tel:</span> +1.813.443.0757</p>
-                  <p><span>Email:</span> sales@igasusa.com</p> 
+                  <p><span style="color: black">Tel:</span> +1.813.443.0757</p>
+                  <p><span style="color: black">Email:</span> sales@igasusa.com</p> 
                 </div>
               </div>
             </div>
@@ -633,7 +799,9 @@ height: 100%;
                   <p><a href="index.html">Home</a></p> 
                   <p><a href="work.html">Refrigerent</a></p> 
                   <p><a href="iclaim.html">Reclamation</a></p> 
-                  <p><a href="contacts.html">Contact Us</a></p>  
+                  <p><a href="contacts.html">Contact Us</a></p> 
+                  <p><a href="code&ethics.html">Code Of Ethics</a></p>   
+
                 </div>
               </div>
             </div>
@@ -657,7 +825,7 @@ height: 100%;
               Licensing information: https://bootstrapmade.com/license/
               Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=eBusiness
             -->
-              Designed by <a href="https://bootstrapmade.com/">Jordan Sickler</a> 
+              Designed by <a href="https://bootstrapmade.com/" style="color:black">Jordan Sickler</a>  
             </div>
           </div>
         </div>
@@ -681,4 +849,4 @@ height: 100%;
 
 </body>
 
-</html>
+</html> 

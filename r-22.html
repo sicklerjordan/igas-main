@@ -176,64 +176,110 @@ img.card-img.rounded-0.img-fluid {
 .title3{
     font-size: 20px 
 }
+#header {  
+    background: #f7f7f7 !important;  
+}
+.navbar a, .navbar a:focus {
+    color: black !important; 
+    font-size: 16px !important; 
+} 
+#header.header-scrolled { 
+}
+@media (min-width: 768px){
+.col-md-4 {
+    flex: 0 0 auto;
+    width: 25% !important;   
+}
+}
+.nav-btn{
+  border:none; 
+  background-color: hsl(214, 96%, 55%);
+  color: white;
+  padding: 10px 50px;   
+  border-radius: 5px;
+  margin-left: 40px;  
+}
+.banner{
+  background: whitesmoke;  
+  height: 35px;   
+  width: 100%;  
+  position: fixed;
+    z-index: 999;   
+}
+#header{
+  margin-top: 35px;
+  height: 70px; 
+  background-color: hsl(0, 0%, 100%) !important;  
+  box-shadow: 0 0.9px 1.5px rgb(0 0 0 / 3%), 0 3.1px 5.5px rgb(0 0 0 / 8%), 0 14px 25px rgb(0 0 0 / 12%);
+}   
+.navbar ul {
+    margin-top: -5px;  
+}
 </style>
 </head>
 
 <body> 
-    <header id="header" class="fixed-top d-flex align-items-center">
-        <div class="container d-flex justify-content-between">
+    <div class="banner">
+        <div style="display:flex;position:absolute;right:0;font-weight:bold;margin-right: 90px;margin-top: 5px;"> 
+            <div style="margin-right:10px"><a href="about.html" style="color: #444;font-weight: 500 !important;">About Us</a></div> 
+          <div style="font-weight: 500 !important">EN(USA)</div>    
+        </div>
+      </div>  
+      <header id="header" class="fixed-top d-flex align-items-center">
+         
+        <div class="container d-flex justify-content-between"> 
     
-          <div class="logo" style="position: absolute;
-          left: 40px;
-          margin-top: -20px;
-          font-weight: bold !important;">
-            <h1><a href="index.html" style="font-weight:bold !important;font-size:36px !important"><span>iGAS</span>USA</a></h1>  
-            <!-- Uncomment below if you prefer to use an image logo --> 
-            <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->  
+          <div class="logo" style="position: absolute;   
+          margin-top: -20px;">
+            <h1><a href="index.html" style="color:black;font-weight: 400 !important;font-size: 25px !important; 
+              ">iGAS<span style="color:hsl(214, 96%, 55%)">USA</span></h1>       
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
           </div>
     
-          <nav id="navbar" class="navbar" style="position: absolute; 
-          right: 40px;
-          margin-top: -25px;"> 
-           <ul>
-            <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-            <li><a class="nav-link scrollto" href="about.html">About</a></li>
-            <li><a class="nav-link scrollto" href="work.html">Refrigerent</a></li> 
-            <li><a class="nav-link scrollto" href="iclaim.html">Reclamation</a></li>   
-            <!--<li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-              <ul>
-                <li><a href="#">Drop Down 1</a></li>
-                <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                  <ul>
-                    <li><a href="#">Deep Drop Down 1</a></li> 
-                    <li><a href="#">Deep Drop Down 2</a></li>
-                    <li><a href="#">Deep Drop Down 3</a></li>
-                    <li><a href="#">Deep Drop Down 4</a></li>
-                    <li><a href="#">Deep Drop Down 5</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Drop Down 2</a></li>
-                <li><a href="#">Drop Down 3</a></li>
-                <li><a href="#">Drop Down 4</a></li>
-              </ul>
-            </li>-->
-            <li><a class="nav-link scrollto" href="contacts.html">Contact</a></li> 
-          </ul>
-            <i class="bi bi-list mobile-nav-toggle"></i>
+          <nav id="navbar" class="navbar" style="right: 0; position: absolute; margin-top: -25px; margin-right: 70px;">  
+            <ul
+              
+              <li><a class="nav-link scrollto" href="work.html">Refrigerent</a></li> 
+              <li><a class="nav-link scrollto" href="iclaim.html">Reclamation</a></li>  
+              <li><a class="nav-link scrollto" href="oem.html">OEM</a></li> 
+              <!--<li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+                <ul>
+                  <li><a href="#">Drop Down 1</a></li>
+                  <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                    <ul>
+                      <li><a href="#">Deep Drop Down 1</a></li> 
+                      <li><a href="#">Deep Drop Down 2</a></li>
+                      <li><a href="#">Deep Drop Down 3</a></li>
+                      <li><a href="#">Deep Drop Down 4</a></li>
+                      <li><a href="#">Deep Drop Down 5</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Drop Down 2</a></li>
+                  <li><a href="#">Drop Down 3</a></li>
+                  <li><a href="#">Drop Down 4</a></li>
+                </ul>
+              </li>-->
+              <li><a class="nav-link scrollto" href="components.html">HVAC Components</a></li> 
+              <li><a href="contacts.html"><button class="nav-btn">Contact Us</button></a></li> 
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>   
           </nav><!-- .navbar -->
     
         </div>
-      </header>
+      </header><!-- End Header --> 
     
       <main id="main">
     
         <!-- ======= Blog Header ======= -->
-        <div class="header-bg page-area">
+        <div class="header-bg page-area" style="height: 350px">  
           <div class="container position-relative">
             <div class="row">
               <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="slider-content text-center">
-                  <div class="header-bottom">
+                  <div class="header-bottom" style="
+                  margin-top: 60px;
+              ">  
                     <div class="layer2">
                       <h1 class="title2">R-22</h1> 
                     </div>

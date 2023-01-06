@@ -10,9 +10,11 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest"> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" charset="utf-8"></script>
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900" rel="stylesheet">
 
@@ -37,51 +39,190 @@
     .footer-contacts > p > a{
   color: black !important 
 }  
+.nav-btn{
+  border:none; 
+  background-color: hsl(214, 96%, 55%);
+  color: white; 
+  padding: 10px 50px;   
+  border-radius: 5px;
+  margin-left: 40px;  
+}
+.banner{
+  background: whitesmoke;  
+  height: 35px;   
+  width: 100%;  
+  position: fixed;
+    z-index: 999;   
+}
+#header{
+  margin-top: 35px;
+  height: 70px; 
+  background-color: hsl(0, 0%, 100%) !important;  
+  box-shadow: 0 0.9px 1.5px rgb(0 0 0 / 3%), 0 3.1px 5.5px rgb(0 0 0 / 8%), 0 14px 25px rgb(0 0 0 / 12%);
+} 
+.navbar a, .navbar a:focus {
+    color:black;
+}
+.page-area {
+    height: 400px;
+}
+.header-bottom { 
+    margin-top: 100px;
+}  
+.accordions {
+width: 80%;
+margin: 50px auto;
+}
+
+.accordions h3 {
+text-align: center;
+font-family: "Roboto", sans-serif;
+font-weight: bold;
+}
+
+.accordion-item {
+background-color: whitesmoke;
+margin-bottom: 20px;
+border-radius: 5px;
+color: black; 
+}
+
+.accordion-item .accordion-title {
+cursor: pointer;
+padding: 20px;
+transition: transform 0.4s ease-in-out;
+}
+
+.accordion-item .accordion-title.active-title {
+background-color: smokewhite;
+color: white; 
+}
+ 
+
+.accordion-item .accordion-title h3 {
+font-weight: 700;
+margin: 0;
+font-size: 18px;
+display: flex;
+justify-content: space-between;
+font-weight: bold;
+}
+
+.accordion-item .accordion-title i.fa-chevron-down {
+transform: rotate(0);
+transition: 0.4s;
+}
+
+.accordion-item .accordion-title i.fa-chevron-down.chevron-top {
+transform: rotate(-180deg);
+color: #fa5019;
+}
+
+.accordion-item .accordion-content {
+display: none;
+line-height: 1.7;
+padding: 20px;
+background-color: #ffffff;
+border-radius: 0 0 5px 5px;
+color: #100e34;
+}
+
+.accordion-item .accordion-content.active {
+display: block;
+}
+
+.accordion-item .accordion-content p {
+margin: 0;
+font-family: "Nunito Sans", sans-serif;
+font-size: 16px;
+}
+
+.details {
+background: #dce1f2;
+}
+
+.details .detailed_info {
+margin: 50px auto;
+}
+
+.details img {
+margin: 0 auto;
+display: block;
+/* margin-top: 120px; */
+}
+
+.details h3 {
+font-family: "Poppins", sans-serif;
+font-weight: bold;
+font-size: 20px;
+}
+
+.details p {
+font-family: "Nunito Sans", sans-serif;
+font-size: 16px;
+line-height: 1.5em;
+}
+
+.details ul li {
+font-family: "Nunito Sans", sans-serif;
+font-size: 16px;
+line-height: 1.7em;
+}
   </style>
 </head>
 
-<body>
+<body>    
 
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top d-flex align-items-center">
-    <div class="container d-flex justify-content-between">
-
-      <div class="logo">
-        <h1><a href="index.html"><span>iGAS</span>USA</a></h1>  
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+  <div class="page">
+    <div class="banner">
+      <div style="display:flex;position:absolute;right:0;font-weight:bold;margin-right: 90px;margin-top: 5px;"> 
+        <a href="about.html"><div style="margin-right:10px;color: #444">About Us</div></a>  
+        <div>EN(USA)</div> 
       </div>
-
-      <nav id="navbar" class="navbar"> 
-        <ul>
-          <li><a class="nav-link scrollto" href="index.html">Home</a></li>
-          <li><a class="nav-link scrollto active" href="about.html">About</a></li>
-          <li><a class="nav-link scrollto" href="work.html">Refrigerent</a></li>
-          <li><a class="nav-link scrollto" href="iclaim.html">Reclamation</a></li>
-          <!--<li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li> 
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li>-->
-          <li><a class="nav-link scrollto" href="contacts.html">Contact</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
-    </div>
-  </header>
+    </div>  
+    <header id="header" class="fixed-top d-flex align-items-center">
+       
+      <div class="container d-flex justify-content-between"> 
+  
+        <div class="logo">
+          <h1><a href="index.html" style="color:black;font-weight: 500;font-size: 25px; 
+            ">iGAS<span style="color:hsl(214, 96%, 55%)">USA</span></h1>       
+          <!-- Uncomment below if you prefer to use an image logo -->
+          <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+        </div>
+  
+        <nav id="navbar" class="navbar">  
+          <ul
+            
+            <li><a class="nav-link scrollto" href="work.html">Refrigerent</a></li> 
+            <li><a class="nav-link scrollto" href="iclaim.html">Reclamation</a></li>  
+            <li><a class="nav-link scrollto" href="about.html">OEM</a></li> 
+            <!--<li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+              <ul>
+                <li><a href="#">Drop Down 1</a></li>
+                <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                  <ul>
+                    <li><a href="#">Deep Drop Down 1</a></li> 
+                    <li><a href="#">Deep Drop Down 2</a></li>
+                    <li><a href="#">Deep Drop Down 3</a></li>
+                    <li><a href="#">Deep Drop Down 4</a></li>
+                    <li><a href="#">Deep Drop Down 5</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Drop Down 2</a></li>
+                <li><a href="#">Drop Down 3</a></li>
+                <li><a href="#">Drop Down 4</a></li>
+              </ul>
+            </li>-->
+            <li><a class="nav-link scrollto" href="contacts.html">HVAC Components</a></li> 
+            <li><button class="nav-btn">Contact Us</button></li> 
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>  
+        </nav><!-- .navbar -->
+  
+      </div> 
+    </header><!-- End Header --> 
 
   <main id="main">
 
@@ -104,7 +245,7 @@
       </div>
     </div><!-- End Blog Header -->
 
-    <!-- ======= Blog Page ======= -->
+    <!-- ======= Blog Page ======= --> 
     <div class="blog-page area-padding">
       <div class="container">
         <div class="row">
@@ -126,7 +267,7 @@
                         </a>
                       </div>
                       <div class="pst-content">
-                        <p><a href="#">Reclamation</a></p>
+                        <p><a href="iclaim.html">Reclamation</a></p> 
                         <p style="font-size: 12px;">iClaim provides exclusive advantages that support a healthy future by reducing global warming by refrigerant lifecycle management.</p>  
                       </div>
                     </div>
@@ -139,7 +280,7 @@
                         </a>
                       </div>
                       <div class="pst-content">
-                        <p><a href="#"> Refrigerent</a></p> 
+                        <p><a href="work.html"> Refrigerent</a></p> 
                         <p style="font-size: 12px;">iGas offers virgin and reclaimed refrigerants in all industry size tanks including refillable and non-refillable cylinders up to ISO containers.</p> 
                       </div>
                     </div>
@@ -153,8 +294,8 @@
                           height: 100px;">   
                         </a>
                       </div>
-                      <div class="pst-content">
-                        <p><a href="#">HVAC Components</a></p> 
+                      <div class="pst-content"> 
+                        <p><a href="components.html">HVAC Components</a></p> 
                         <p style="font-size: 12px;"> CoolMaster products assist in making daily work requirements easier, faster, safer, more economical, and improve working conditions for the industry.</p> 
                       </div>
                     </div>
@@ -192,30 +333,109 @@
         </div>
       </div>
     </div><!-- End Blog Page -->
-    <div class="suscribe-area"> 
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 col-md-12 col-sm-12 col-xs=12">
-            <div class="suscribe-text text-center">
-              <h3>Welcome to iGas Usa</h3>
-              <a class="sus-btn" href="contacts.html">Contact Us</a>  
+<div><h1 style="text-align: center">Frequently Asked Questions About Using iGas Usa</h1></div>    
+  <section id="faq">
+      <div class="container faq">
+  
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="accordions">
+                <div class="accordion-item">
+                  <div class="accordion-title" data-tab="item1">
+                    <h3>What is refrigerant? <i class="fa fa-chevron-down"></i></h3>
+                  </div>
+                  <div class="accordion-content" id="item1">
+                    <p>
+                      A refrigerant is a substance or mixture, usually a fluid, used in a heat pump and refrigeration cycle. In most cycles it undergoes phase transitions from a liquid to a gas and back again. Many working fluids have been used for such purposes.
+                    </p>
+                  </div>
+                </div>
+  
+                <div class="accordion-item">
+                  <div class="accordion-title" data-tab="item2">
+                    <h3>Why are refrigerent container's color coded? <i class="fa fa-chevron-down"></i></h3>
+                  </div>
+                  <div class="accordion-content" id="item2">
+                    <p>
+                      NOTE: The color guideline is not a substitute for reading cylinder labels and markings.
+
+Refrigerants are grouped in four classes in order to create more color opportunities within readily identifiable container styles and to clearly differentiate Flammable Refrigerants
+Class I: Liquid Refrigerants - Those Refrigerants with a normal boiling point greater than 20°C. These products normally are packaged in drums.
+Class II: Low Pressure Refrigerants - Those Refrigerants meeting the definition of a “compressed gas.” The gas should have a minimum cylinder service pressure not exceeding 3447 kPa (gage).
+Class III: High Pressure Refrigerants - Those Refrigerants meeting the definition of a compressed gas. The gas should have a minimum cylinder service pressure exceeding 3447 kPa (gage).
+Class IV: Flammable Refrigerants - Those Refrigerants that receive a flammability rating of 2 or 3 in ANSI/ASHRAE Standard 34, Designation and Safety Classifications of Refrigerants with Addenda.
+                    </p>
+                  </div>
+                </div>
+  
+                <div class="accordion-item">
+                  <div class="accordion-title" data-tab="item3">
+                    <h3>Is refrigerant toxic<i class="fa fa-chevron-down"></i></h3>
+                  </div>
+                  <div class="accordion-content" id="item3">
+                    <p>
+                      Freon is a tasteless, mostly odorless gas. When it is deeply inhaled, it can cut off vital oxygen to your cells and lungs. Limited exposure — for example, a spill on your skin or breathing near an open container — is only mildly harmful. However, you should try to avoid all contact with these types of chemicals.
+                    </p>
+                  </div>
+                </div>
+  
+                <div class="accordion-item">
+                  <div class="accordion-title" data-tab="item4">
+                    <h3>Which refrigerant is used in air conditioning? <i class="fa fa-chevron-down"></i></h3>
+                  </div>
+                  <div class="accordion-content" id="item4">
+                    <p>
+                      To remove chlorine from the refrigerant, manufacturers created another set of refrigerants called HFCs (or Hydro Fluro Carbons). Although they also have the potential for global warming, but still they are better than HCFCs as they do not deplete the ozone layer. The most common HFC used in air conditioners is R-410A.
+                    </p>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <div class="accordion-title" data-tab="item5">
+                    <h3>Which is the most commonly used refrigerant?<i class="fa fa-chevron-down"></i></h3>
+                  </div>
+                  <div class="accordion-content" id="item5">
+                    <p class="lead">
+                      <strong>R-134a Refrigerant</strong>
+                    </p>
+                    <p> 
+                      Widely used in many air conditioning and refrigeration systems globally.
+                    </p>
+                    <p>
+                      It is a hydro-fluorocarbon (HFC) that does not contribute to ozone depletion; also the first non-ozone-depleting fluorocarbon refrigerant to be commercialized.
+                    </p>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <div class="accordion-title" data-tab="item6">
+                    <h3>Which refrigerant gas is best?<i class="fa fa-chevron-down"></i></h3>
+                  </div>
+                  <div class="accordion-content" id="item6">
+                    <p>
+                      To remove chlorine from the refrigerant, manufacturers created another set of refrigerants called HFCs (or Hydro Fluro Carbons). Although they also have the potential for global warming, but still, they are better than HCFCs as they do not deplete the ozone layer. The most common HFC used in air conditioners is R-410A.
+                    </p>
+                  </div>
+                </div>
+  
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div><!-- End Suscribe Section -->
-  </main><!-- End #main -->
+    </section>
+
 
   <!-- ======= Footer ======= -->
   <footer>
     <div class="footer-area">
       <div class="container">
-        <div class="row" style="gap:80px">   
+        <div class="row gap" style="justify-content: center;
+        align-items: center;">   
           <div class="col-md-4">
             <div class="footer-content">
               <div class="footer-head">
                 <div class="footer-logo">
-                  <h2><span>iGAS</span>Usa</h2>
+                 <img style="width:100px" src="igaslogo.png" />            
                 </div>
 
                 <p>Our mission is to develop innovative solutions that will have a positive effect on our company's work, business and the environment.</p> 
@@ -244,19 +464,17 @@
               <div class="footer-head">
                 <h4>information</h4> 
                 <p>
-                 
+                  Our mission is to develop innovative solutions that will have a positive effect on our company’s work, business and the environment.
                 </p>
                 <div class="footer-contacts">
-                  <p><span>Address: </span>8105 Anderson Road,<br/>  
-                    Tampa, FL 33634</p>
-                  <p><span>Tel:</span> +1.813.443.0757</p>
-                  <p><span>Email:</span> sales@igasusa.com</p> 
+                  <p><span style="color: black">Tel:</span> +1.813.443.0757</p>
+                  <p><span style="color: black">Email:</span> sales@igasusa.com</p> 
                 </div>
               </div>
             </div>
           </div>
           <!-- end single footer -->
-          <div class="col-md-4" style="width: 20% !important">  
+          <div class="col-md-4 last-foot" style="width: 20% !important">   
             <div class="footer-content">
               <div class="footer-head">
                 <h4>Links</h4> 
@@ -264,7 +482,9 @@
                   <p><a href="index.html">Home</a></p> 
                   <p><a href="work.html">Refrigerent</a></p> 
                   <p><a href="iclaim.html">Reclamation</a></p> 
-                  <p><a href="contacts.html">Contact Us</a></p>  
+                  <p><a href="contacts.html">Contact Us</a></p> 
+                  <p><a href="code&ethics.html">Code Of Ethics</a></p>   
+
                 </div>
               </div>
             </div>
@@ -288,10 +508,10 @@
               Licensing information: https://bootstrapmade.com/license/
               Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=eBusiness
             -->
-              Designed by <a href="https://bootstrapmade.com/">Jordan Sickler</a> 
+              Designed by <a href="https://bootstrapmade.com/" style="color:black">Jordan Sickler</a>  
             </div>
           </div>
-        </div> 
+        </div>
       </div>
     </div>
   </footer><!-- End  Footer -->
@@ -308,7 +528,34 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $(".accordion-title").click(function (e) {
+        var accordionitem = $(this).attr("data-tab");
+        $("#" + accordionitem)
+          .slideToggle()
+          .parent()
+          .siblings()
+          .find(".accordion-content")
+          .slideUp();
+  
+        $(this).toggleClass("active-title");
+        $("#" + accordionitem)
+          .parent()
+          .siblings()
+          .find(".accordion-title")
+          .removeClass("active-title");
+  
+        $("i.fa-chevron-down", this).toggleClass("chevron-top");
+        $("#" + accordionitem)
+          .parent()
+          .siblings()
+          .find(".accordion-title i.fa-chevron-down")
+          .removeClass("chevron-top");
+      });
+    });
+  
+    </script> 
 </body>
 
 </html>
