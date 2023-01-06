@@ -143,6 +143,11 @@
   background-color: hsl(0, 0%, 100%) !important;  
   box-shadow: 0 0.9px 1.5px rgb(0 0 0 / 3%), 0 3.1px 5.5px rgb(0 0 0 / 8%), 0 14px 25px rgb(0 0 0 / 12%);
 } 
+@media (max-width: 900px){
+  .bottom-para {
+    flex-direction: column;
+} 
+}
 @media(max-width: 560px) {
 .para-title{
   margin-left: 0px !important;  
@@ -164,6 +169,7 @@ i.fa.fa-recycle {
 }
 .last-foot{
   text-align: left !important;   
+  width: 100% !important; 
 }
 .comp{
   height: 500px !important;
@@ -176,6 +182,16 @@ i.fa.fa-recycle {
 i.bi.bi-list.mobile-nav-toggle {
     color: black;
 } 
+.single-blog-img {
+    height: 400px !important;
+} 
+.single-blog-img > a > img { 
+    height: 400px !important;
+}
+img.claim-img.comp {
+    width: 750px !important;
+    margin-left: -190px !important;
+}  
 } 
   </style>
 </head>
@@ -797,7 +813,7 @@ i.bi.bi-list.mobile-nav-toggle {
             </div>
           </div>
           <!-- end single footer -->
-          <div class="col-md-4 last-foot" style="width: 20% !important">   
+          <div class="col-md-4 last-foot" style="width: 20%">    
             <div class="footer-content">
               <div class="footer-head">
                 <h4>Links</h4> 
