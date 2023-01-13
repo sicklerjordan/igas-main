@@ -2620,7 +2620,7 @@ span.email-notes {
   }
 }
 a.filter-btn.btn.rounded-pill.btn-outline-primary.border-0.m-md-2.px-md-4 {
-  border: 2px solid hsl(214, 96%, 55%) !important;
+  border: .5px solid hsl(214, 96%, 55%) !important;
   border-radius: 10px !important; 
 } 
 ul.dropdown-menu {
