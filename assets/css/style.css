@@ -2738,7 +2738,7 @@ a.clip-each:hover {
 
 .clip-border {
    
-  background: #262f47; 
+  background: #262f47;
   width: 60px; 
   height: 60px;
   margin-top: 7px;
@@ -2785,3 +2785,12 @@ a.clip-each:hover {
     margin-top: 20px;
   }
 }
+@media(max-width: 991px){
+.mobile-nav-toggle {
+    display: block;
+    color: black;
+}
+} 
+.footer-area {
+  border-top: 0.5px solid lightgrey !important;
+} 

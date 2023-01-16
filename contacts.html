@@ -80,7 +80,7 @@
 .header-bottom { 
     margin-top: 100px;
 }  
-@media(max-width: 900px){
+@media(max-width: 920px){
   .last-foot{
   text-align: left !important;   
   width: 100% !important; 
@@ -88,10 +88,18 @@
 i.bi.bi-list.mobile-nav-toggle {
     color: black;
 }
+.contact-para{
+  width: 90% !important;  
+}
 .about-us{ 
   margin-right: 10px !important;
 } 
 }
+@media(max-width:500px){
+  .last-foot{ 
+    width: 100% !important; 
+  }
+}  
     </style>
   </head>
   <body>
@@ -100,7 +108,7 @@ i.bi.bi-list.mobile-nav-toggle {
     <div class="page">
       <div class="banner">
         <div class="about-us" style="display:flex;position:absolute;right:0;font-weight:bold;margin-right: 90px;margin-top: 5px;"> 
-          <div style="margin-right:10px">About Us</div>  
+          <div style="margin-right:10px"><a href="about.html" style="color: #444">About Us</a></div>   
           <div>EN(USA)</div> 
         </div>
       </div>  
@@ -210,7 +218,7 @@ i.bi.bi-list.mobile-nav-toggle {
                 width: 900px;
                 margin-left: -160px;">  
                   <h3 class="text-uppercase wow-outer"><span class="wow slideInDown">Contact Us</span></h3>
-                  <p style="width: 600px;">We understand your time is valuable, so we make ordering convenient. Please feel free to contact us by any of the options below or submit your inquiry online, and one of our friendly associates will be happy to assist.</p>
+                  <p class="contact-para" style="width: 600px;">We understand your time is valuable, so we make ordering convenient. Please feel free to contact us by any of the options below or submit your inquiry online, and one of our friendly associates will be happy to assist.</p>
                   <!-- RD Mailform-->
                   <form class="rd-form rd-mailform" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
                     <div class="row row-10">
@@ -304,7 +312,7 @@ i.bi.bi-list.mobile-nav-toggle {
                 </div>
               </div>
               <!-- end single footer -->
-              <div class="col-md-4 last-foot" style="width: 20% !important">   
+              <div class="col-md-4 last-foot" style="width: 20%">   
                 <div class="footer-content">
                   <div class="footer-head">
                     <h4>Links</h4> 
