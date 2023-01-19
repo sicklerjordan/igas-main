@@ -295,7 +295,7 @@ div#preloader {
 }
 
 .header-bg {
-  background: url('../img/background/page-header.jpg'); 
+  background: url('/offices.jpg');   
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
@@ -2793,4 +2793,13 @@ a.clip-each:hover {
 } 
 .footer-area {
   border-top: 0.5px solid lightgrey !important;
+} 
+.product-wap.card.rounded-0 {
+  width: 340px; 
+}
+
+element.style {
+}
+img.card-img.rounded-0.img-fluid {
+    height: 465px;
 } 
